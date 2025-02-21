@@ -1,0 +1,225 @@
+/* --- Общие стили --- */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Анимация фона */
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* --- Шапка --- */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Центрирование */
+    flex-wrap: wrap;
+}
+
+/* Контейнер внутри шапки */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Центрирование */
+    gap: 15px;  /* Расстояние между логотипом и заголовком */
+    width: 100%;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}
+
+/* Заголовок h1 */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+/* --- Навигация --- */
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* --- Секции --- */
+section {
+    width: 80%;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+/* --- Подвал --- */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* --- Кнопка "Заказать звонок" --- */
+.callback-button {
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.callback-button:hover {
+    background-color: #0097a7;
+    transform: scale(1.1);
+}
+
+.callback-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* --- Чекбокс согласия --- */
+.agreement-label {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 15px;
+    color: white;
+}
+
+.agreement-link {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.agreement-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Адаптивность --- */
+
+/* Адаптив для планшетов */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo img {
+        width: 60px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo img {
+        width: 50px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    section {
+        width: 95%;
+    }
+}
