@@ -57,8 +57,8 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     text-align: center;
+    color: white; /* Белый цвет для заголовка */
 }
-
 
 /* --- Навигация --- */
 nav {
@@ -101,10 +101,11 @@ section {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
     max-width: 1200px;
+    color: white; /* Белый цвет текста */
 }
 
 h2 {
-    color: #9b59b6;    
+    color: #9b59b6;
     text-align: center;
 }
 
@@ -159,46 +160,44 @@ h2 {
     text-align: center;
 }
 
-  
 #articles {
     max-width: 1200px; /* Уменьшена максимальная ширина */
     margin: 0 auto;
     font-family: Arial, sans-serif;
-  }
-  
-  #articles h2,
-  #articles h3,
-  #articles h4 {
+}
+
+#articles h2,
+#articles h3,
+#articles h4 {
     text-align: center;
     text-decoration: underline;
-  }
-  
-  #articles h2 {
+}
+
+#articles h2 {
     font-size: 24px; /* Уменьшен размер заголовка */
     margin-bottom: 12px; /* Уменьшены отступы */
-  }
-  
-  #articles h3 {
+}
+
+#articles h3 {
     font-size: 20px; /* Уменьшен размер заголовка */
     margin-bottom: 10px; /* Уменьшены отступы */
     color: #3cff3c
-  }
-  
-  #articles h4 {
+}
+
+#articles h4 {
     font-size: 16px; /* Уменьшен размер заголовка */
     margin-bottom: 8px; /* Уменьшены отступы */
-  }
-  
-  #articles p,
-  #articles ul {
+}
+
+#articles p,
+#articles ul {
     font-size: 12px; /* Уменьшен размер текста */
-    line-height: 1,5; /* Уменьшен межстрочный интервал */
-  }
-  
-  #articles ul {
+    line-height: 1.5; /* Уменьшен межстрочный интервал */
+}
+
+#articles ul {
     padding-left: 18px; /* Уменьшен отступ для списков */
-  }
-  
+}
 
 /* --- Подвал --- */
 footer {
@@ -274,59 +273,120 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* --- Адаптивность --- */
+/* Общие стили для баннера */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    font-style: italic; /* Наклонный текст для всего баннера */
+    border-radius: 10px;
+  }
+  
+  #cookie-banner span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  #cookie-banner button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  #accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    font-style: italic; /* Наклонный текст для всего баннера */
+  }
+  
+  #decline-cookies {
+    background-color: #f44336;
+    color: white;
+    border-radius: 10px;
+    font-style: italic; /* Наклонный текст для всего баннера */
+  }
+  
+  /* Адаптивный стиль для мобильных устройств */
+  @media (max-width: 768px) {
+    #cookie-banner span {
+      font-size: 14px; /* Уменьшаем размер текста */
+    }
+  
+    #cookie-banner button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #cookie-banner span {
+      font-size: 12px; /* Уменьшаем размер текста */
+    }
+  
+    #cookie-banner button {
+      padding: 6px 14px;
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #cookie-banner span {
+      font-size: 10px; /* Ещё меньше текст */
+    }
+  
+    #cookie-banner button {
+      padding: 5px 12px;
+      font-size: 9px;
+    }
+  }
+  
 
-/* Адаптив для планшетов */
+  /* --- Медиа-запросы для адаптивности для всего сайта --- */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    header h1 {
+        font-size: 1.8em;
     }
     .logo img {
-        width: 60px; /* Уменьшение размера логотипа */
-    }
-    header h1 {
-        font-size: 2.2em; /* Немного увеличен размер заголовка */
+        width: 60px;
     }
     nav ul {
-        flex-direction: column;
-        gap: 12px; /* Немного увеличен интервал */
-    }
-}
-
-/* Адаптив для мобильных */
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .logo img {
-        width: 50px; /* Уменьшение логотипа */
-    }
-    header h1 {
-        font-size: 2em; /* Увеличение размера заголовка */
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px; /* Увеличен интервал */
+        gap: 10px;
     }
     section {
-        width: 100%; /* Изменена ширина для большего пространства */
-        padding: 15px; /* Немного уменьшен отступ */
+        width: 95%;
+        padding: 10px;
     }
-}
-/* Адаптив для статей на мобильных */
-@media (max-width: 480px) {
-    #articles h2, #articles h3, #articles h4 {
-        font-size: 1.2em; /* Уменьшаем размер заголовков */
-    }
-    #articles p, #articles ul {
-        font-size: 0.9em; /* Уменьшаем размер текста */
-    }
-    #articles ul {
-        padding-left: 16px; /* Немного уменьшен отступ для списков */
+    .callback-button {
+        font-size: 1em;
+        padding: 8px 15px;
     }
 }
 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .logo img {
+        width: 50px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-item {
+        width: 80px;
+        padding: 8px;
+    }
+}

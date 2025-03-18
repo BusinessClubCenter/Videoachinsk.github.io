@@ -2,15 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-    <link rel="manifest" href="images/site.webmanifest" />
-    <title>Видеонаблюдение в Ачинске</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Yandex.Metrika counter -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Установка и настройка видеонаблюдения в Ачинске. Надежные камеры, профессиональный монтаж, лучшие решения для безопасности!" />
+  <meta name="author" content="Business Club" />
+  <meta name="apple-mobile-web-app-title" content="Видеонаблюдение в Ачинске" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Видеонаблюдение в Ачинске - Надежные решения для безопасности" />
+  <meta property="og:description" content="Предлагаем профессиональную установку систем видеонаблюдения в Ачинске. Камеры для дома и бизнеса, настройка, обслуживание!" />
+  <meta property="og:image" content="https://businessclubcenter.github.io/Videoachinsk.github.io/images/cctv_preview.png" />
+  <meta property="og:url" content="https://businessclubcenter.github.io/Videoachinsk.github.io/" />
+  <title>Видеонаблюдение в Ачинске</title>
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -45,10 +54,18 @@
           </ul>
       </nav>
   </header>
+  <div id="cookie-banner">
+    <span>Чтобы сделать ваше пребывание на сайте более удобным, мы используем cookies. Примите их для продолжения.</span>
+    <button id="accept-cookies">Принять</button>
+    <button id="decline-cookies">Отклонить</button>
+  </div>
+
 
   <section id="about">
     <h2>О нас</h2>
-    <p>Мы работаем с 2010 года, и за это время приобрели огромный опыт в сфере видеонаблюдения. Мы гордимся тем, что являемся официальными представителями компании ST, и предоставляем нашим клиентам надежные и современные решения для обеспечения безопасности.</p>
+    <p>Мы работаем с 2010 года, и за это время приобрели огромный опыт в сфере видеонаблюдения. 
+      Мы гордимся тем, что являемся официальными представителями компании ST, и предоставляем нашим 
+      клиентам надежные и современные решения для обеспечения безопасности. Мы находимся в Ачинске, но работаем по всему Красноярскому краю</p>
     
     <h3>Компания в цифрах</h3>
     <div class="stats">
@@ -104,9 +121,32 @@
     
     <section id="contacts">
       <h2>Наши контакты</h2>
-      <p>📍 Адрес: г. Ачинск, 6-й мкр. д. 11 (Вход с торца дома Компания "Контроль")</p>
-      <p>📞 Телефон: +7 (000) 000-00-00</p>
+      <p>📍 Адрес: Красноярский край, г. Ачинск, 6-й мкр. д. 11 (Вход с торца дома Компания "Контроль")</p>
+      <p>📞 Телефон: +7 (967) 618-88-80</p>
       <p>📧 Email: videoachinsk@gmail.com</p>
+      <p>Если по какой-то причине мы не успели ответить на ваш звонок, оставьте заявку, и мы обязательно перезвоним вам в ближайшее время.</p>
+    </section>
+
+    <section id="callback">
+      <h2>Заказать звонок</h2>
+      <a
+        id="callback-link"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfkuo3AmHiHkkafwHw3K0Nrg-l7_kr3vhF0t8_IdMGkFKg5oA/viewform?usp=dialog"
+        target="_blank"
+        style="pointer-events: none"
+      >
+        <button class="callback-button">Заказать звонок</button>
+      </a>
+
+      <form id="agreement-form">
+        <label class="agreement-label">
+          <input type="checkbox" id="agreement" name="agreement" required />
+          * Я согласен на
+          <a href="user-agreement.html" target="_blank" class="agreement-link"
+            >обработку моих данных</a
+          >.
+        </label>
+      </form>
     </section>
 
     <section id="articles">
@@ -231,8 +271,6 @@
   </article>
   
       
-
-
       <!-- Будущие статьи -->
       <!-- 
           
@@ -246,30 +284,7 @@
         <p>Текст будущей статьи...</p>
       </article>
       -->
-    </section>
-    
-
-    <section id="callback">
-      <h2>Заказать звонок</h2>
-      <a
-        id="callback-link"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfkuo3AmHiHkkafwHw3K0Nrg-l7_kr3vhF0t8_IdMGkFKg5oA/viewform?usp=dialog"
-        target="_blank"
-        style="pointer-events: none"
-      >
-        <button class="callback-button">Заказать звонок</button>
-      </a>
-
-      <form id="agreement-form">
-        <label class="agreement-label">
-          <input type="checkbox" id="agreement" name="agreement" required />
-          * Я согласен на
-          <a href="user-agreement.html" target="_blank" class="agreement-link"
-            >обработку моих данных</a
-          >.
-        </label>
-      </form>
-    </section>
+    </section>    
 
     <footer>
       <p>&copy; 2025 Видеонаблюдение в Ачинске. Все права защищены.</p>
@@ -283,5 +298,68 @@
       </nav>
     </footer>
     <script src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Видеонаблюдение в Ачинске",
+        "url": "https://businessclubcenter.github.io/Videoachinsk.github.io/",
+        "description": "Предлагаем профессиональную установку систем видеонаблюдения в Ачинске. Камеры для дома и бизнеса, настройка, обслуживание!",
+        "logo": "https://businessclubcenter.github.io/Videoachinsk.github.io/images/Logo_video.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+7 (967) 618-88-80",
+          "contactType": "Customer Service",
+          "areaServed": "RU",
+          "availableLanguage": "Russian"
+        },
+        "email": "videoachinsk@gmail.com"
+      }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>  
+
+      <script>
+        // Проверка, был ли уже принят consent (согласие) на использование cookies
+        if (!localStorage.getItem('cookies_accepted')) {
+          document.getElementById('cookie-banner').style.display = 'block';  // Если согласие не было принято, показываем баннер
+        }
+    
+        // Слушаем клик по кнопке "Принять"
+        document.getElementById('accept-cookies').addEventListener('click', function () {
+          localStorage.setItem('cookies_accepted', 'true');  // Сохраняем согласие пользователя
+          document.getElementById('cookie-banner').style.display = 'none';  // Скрываем баннер после согласия
+    
+          // Инициализация Яндекс.Метрики только после согласия
+          (function (d, w, c) {
+            w[c] = w[c] || [];
+            w[c].push(function() {
+              try {
+                w.yaCounter100342982 = new Ya.Metrika({
+                  id: 100342982,  // Замените на свой идентификатор Яндекс.Метрики
+                  clickmap: true,
+                  trackLinks: true,
+                  accurateTrackBounce: true
+                });
+              } catch(e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            n.parentNode.insertBefore(s, n);
+          })(document, window, "yaCounter123456");
+        });
+    
+        // Слушаем клик по кнопке "Отклонить"
+        document.getElementById('decline-cookies').addEventListener('click', function () {
+          localStorage.setItem('cookies_accepted', 'false');  // Сохраняем отказ от cookies
+          document.getElementById('cookie-banner').style.display = 'none';  // Скрываем баннер после отказа
+    
+          // Если пользователь отклонил cookies, не инициализируем Яндекс.Метрику
+          console.log("Яндекс.Метрика не будет загружена без согласия пользователя.");
+        });
+      </script>
+
   </body>
 </html>

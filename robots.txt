@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://businessclubcenter.github.io/Videoachinsk.github.io/sitemap.xml
