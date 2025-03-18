@@ -148,7 +148,7 @@ h2 {
 }
 
 #about .stat-item h4 {
-    font-size: 2.5em; /* Уменьшили размер шрифта */
+    font-size: 2em; /* Уменьшили размер шрифта */
     color: #000000;
     margin-bottom: 8px; /* Уменьшили нижний отступ */
     text-align: center;
